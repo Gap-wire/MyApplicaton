@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/dark_blue"
+    tools:context=".NewCon">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/_white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/new_connection"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="40dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/hostname"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginHorizontal="30dp"
+                android:background="@drawable/edit_text_background"
+                android:drawableStart="@drawable/baseline_cloud_upload_24"
+                android:drawableTint="@color/dark_blue"
+                android:drawablePadding="10dp"
+                android:paddingHorizontal="10dp"
+                android:textSize="16sp"
+                android:hint="@string/hostname"
+                android:inputType="text" />
+            <EditText
+                android:id="@+id/port"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="30dp"
+                android:background="@drawable/edit_text_background"
+                android:drawableStart="@drawable/baseline_usb_24"
+                android:drawableTint="@color/dark_blue"
+                android:drawablePadding="10dp"
+                android:paddingHorizontal="10dp"
+                android:textSize="16sp"
+                android:hint="@string/prot"
+                android:inputType="text" />
+            <EditText
+                android:id="@+id/schema"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="30dp"
+                android:background="@drawable/edit_text_background"
+                android:drawableStart="@drawable/baseline_folder_24"
+                android:drawableTint="@color/dark_blue"
+                android:drawablePadding="10dp"
+                android:paddingHorizontal="10dp"
+                android:textSize="16sp"
+                android:hint="@string/schema"
+                android:inputType="text" />
+            <EditText
+                android:id="@+id/user"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="30dp"
+                android:background="@drawable/edit_text_background"
+                android:drawableStart="@drawable/baseline_person_24"
+                android:drawableTint="@color/dark_blue"
+                android:drawablePadding="10dp"
+                android:paddingHorizontal="10dp"
+                android:textSize="16sp"
+                android:hint="@string/user"
+                android:inputType="textEmailAddress"
+                tools:ignore="LabelFor,VisualLintTextFieldSize"
+                android:autofillHints="Email" />
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="30dp"
+                android:background="@drawable/edit_text_background"
+                android:drawableStart="@drawable/baseline_key_24"
+                android:drawableTint="@color/dark_blue"
+                android:drawablePadding="10dp"
+                android:paddingHorizontal="10dp"
+                android:textSize="16sp"
+                android:hint="@string/password"
+                android:inputType="text"
+                tools:ignore="LabelFor,TextFields, VisualLintTextFieldSize"
+                android:autofillHints="Password" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/cancel"
+                    android:textColor="@color/yellow"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/cancel"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="100dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/save"
+                    android:textColor="@color/yellow"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/save"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="20dp"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
