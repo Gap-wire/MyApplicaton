@@ -34,4 +34,6 @@
     <string name="schema">Schema</string>
     <string name="cancel">Cancel</string>
     <string name="save">Save</string>
+    <string name="subtitle">SubTitle</string>
+    <string name="description">Description</string>
 </resources>
